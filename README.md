@@ -1,6 +1,7 @@
 # Home Lab Infrastructure
 
-Personal infrastructure lab focused on system administration,
+This lab simulates a small enterprise IT environment
+running entirely on VMware Workstation, focused on system administration,
 networking, virtualization and automation.
 
 ## Technologies
