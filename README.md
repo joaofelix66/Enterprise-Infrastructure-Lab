@@ -18,7 +18,7 @@ networking, virtualization and automation.
 
 ## Architecture
 
-![Network Architecture](diagrams/network.png)
+![Network Architecture](diagrams/architecture.png)
 
 ## Documentation
 
