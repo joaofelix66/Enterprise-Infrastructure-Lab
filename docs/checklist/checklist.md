@@ -53,16 +53,16 @@ The logical enterprise architecture describes the target environment. The curren
   - `192.168.20.1/24` (VLAN 20 - SERVERS)
   - `192.168.30.1/24` (VLAN 30 - CLIENTS)
 - [x] Configure routing & NAT
-- [ ] Configure firewall aliases
-- [ ] Configure firewall rules:
+- [x] Configure firewall aliases
+- [x] Configure firewall rules:
   - Allow VLAN 30 -> VLAN 20 (WinRM `5985/5986`, RDP `3389`, AD/DNS ports)
   - Allow outbound Internet traffic
   - Implement default-deny rules for unauthorized inter-VLAN traffic
-- [ ] Configure OPNsense **DHCP Relay** on VLAN 30 pointing to `192.168.20.10` (DC01)
-- [ ] Configure OPNsense NTP server for network clock synchronization
-- [ ] Configure management access
-- [ ] Configure VPN
-- [ ] Document firewall configuration
+- [x] Configure OPNsense **DHCP Relay** on VLAN 30 pointing to `192.168.20.10` (DC01)
+- [x] Configure OPNsense NTP server for network clock synchronization
+- [x] Configure management access
+- [x] Configure VPN
+- [x] Document firewall configuration
 
 #### VLANs
 - [x] VLAN 10 - Management
@@ -75,12 +75,12 @@ The logical enterprise architecture describes the target environment. The curren
 - [x] VLAN 80 - Guest
 
 #### Network Validation
-- [ ] Test routing across subnets
-- [ ] Test NAT / WAN access
-- [ ] Test DNS connectivity
-- [ ] Test allowed inter-VLAN traffic
-- [ ] Test blocked inter-VLAN traffic
-- [ ] Test management access
+- [x] Test routing across subnets
+- [x] Test NAT / WAN access
+- [x] Test DNS connectivity
+- [x] Test allowed inter-VLAN traffic
+- [x] Test blocked inter-VLAN traffic
+- [x] Test management access
 - [ ] Test VPN
 - [ ] Test DMZ isolation
 - [ ] Test guest isolation
@@ -111,7 +111,7 @@ The logical enterprise architecture describes the target environment. The curren
 - [x] Install RSAT tools on `WIN11-01` (`RSAT.ActiveDirectory.DS-LDS.Tools`, `RSAT.Dns.Tools`, `RSAT.DHCP.Tools`)
 - [x] Test domain authentication & Kerberos ticket issuance
 - [x] Test DNS resolution
-- [ ] Test DHCP leases via OPNsense DHCP Relay
+- [x] Test DHCP leases via OPNsense DHCP Relay
 - [ ] Test user/group permissions
 - [ ] Test account lockout
 - [ ] Test password policies
