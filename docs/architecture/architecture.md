@@ -65,7 +65,7 @@ The current host provides 16 GB of RAM, so several logical roles are consolidate
 
 | VM | RAM | Current Functions |
 |---|---:|---|
-| FW01 | 1.5 GB | OPNsense/pfSense, firewall, routing, VLANs, NAT, VPN |
+| FW01 | 1.5 GB | OPNsense, firewall, routing, VLANs, NAT, VPN |
 | DC01 | 2 GB | AD DS, DNS, DHCP, GPO, AD CS/PKI, NPS/RADIUS |
 | FILE01 | 2 GB | SMB, NTFS, ABE, quotas, shadow copies, WSUS |
 | LINUX01 | 2.5 GB | Linux, Docker, Nginx, Prometheus, Grafana, Syslog, security workloads |
