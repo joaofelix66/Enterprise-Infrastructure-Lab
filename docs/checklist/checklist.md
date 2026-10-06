@@ -65,14 +65,14 @@ The logical enterprise architecture describes the target environment. The curren
 - [ ] Document firewall configuration
 
 #### VLANs
-- [x] VLAN 10 — Management
-- [x] VLAN 20 — Servers
-- [x] VLAN 30 — Clients
-- [x] VLAN 40 — DMZ
-- [x] VLAN 50 — Security / Monitoring
-- [x] VLAN 60 — Backup
-- [x] VLAN 70 — VPN
-- [x] VLAN 80 — Guest
+- [x] VLAN 10 - Management
+- [x] VLAN 20 - Servers
+- [x] VLAN 30 - Clients
+- [x] VLAN 40 - DMZ
+- [x] VLAN 50 - Security / Monitoring
+- [x] VLAN 60 - Backup
+- [x] VLAN 70 - VPN
+- [x] VLAN 80 - Guest
 
 #### Network Validation
 - [ ] Test routing across subnets
