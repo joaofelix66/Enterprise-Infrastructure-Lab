@@ -94,7 +94,7 @@ These networks are logical security zones.
 
 ## 4. Security Zones
 
-### Management — VLAN 10
+### Management - VLAN 10
 
 Used for administrative access.
 
@@ -108,7 +108,7 @@ Examples:
 
 Access is restricted to authorized administrators.
 
-### Servers — VLAN 20
+### Servers - VLAN 20
 
 Contains core enterprise services:
 
@@ -120,7 +120,7 @@ Contains core enterprise services:
 
 The server network is not treated as a flat trusted network.
 
-### Clients — VLAN 30
+### Clients - VLAN 30
 
 Contains domain-joined endpoints such as WIN11-01 and WIN11-02.
 
@@ -139,7 +139,7 @@ WSUS
 
 They do not receive unrestricted access to every server.
 
-### DMZ — VLAN 40
+### DMZ - VLAN 40
 
 Used for services with possible external exposure.
 
@@ -151,7 +151,7 @@ WEB01
 
 A compromised DMZ host should not automatically have access to internal servers.
 
-### Security — VLAN 50
+### Security - VLAN 50
 
 Used for:
 
@@ -163,19 +163,19 @@ Used for:
 
 Monitoring systems receive only the access required to collect their data.
 
-### Backup — VLAN 60
+### Backup - VLAN 60
 
 Used for backup infrastructure and protected backup traffic.
 
 Backup systems are treated as a separate security boundary rather than ordinary file servers.
 
-### VPN — VLAN 70
+### VPN - VLAN 70
 
 Remote users terminate into the VPN network.
 
 VPN access is controlled by firewall rules and, where applicable, RADIUS/NPS authentication.
 
-### Guest — VLAN 80
+### Guest - VLAN 80
 
 Guest devices are untrusted.
 
