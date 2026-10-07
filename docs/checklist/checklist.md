@@ -43,26 +43,34 @@ The logical enterprise architecture describes the target environment. The curren
 
 ---
 
-### Phase 3 - Network Infrastructure & Routing
+### Phase 3 — Network Infrastructure & Routing
 
 #### FW01 (OPNsense)
-- [x] Install/configure OPNsense
-- [x] Configure WAN interface
-- [x] Configure LAN / OPT interfaces
+- [x] Install/configure OPNsense (Permanent Disk Mode)
+- [x] Configure WAN interface (em0 - NAT)
+- [x] Configure LAN Trunk parent interface (em1 - Trunk-Segment)
 - [x] Configure VLAN interfaces:
+  - `192.168.10.1/24` (VLAN 10 - MANAGEMENT)
   - `192.168.20.1/24` (VLAN 20 - SERVERS)
   - `192.168.30.1/24` (VLAN 30 - CLIENTS)
+  - `192.168.40.1/24` (VLAN 40 - DMZ)
+  - `192.168.50.1/24` (VLAN 50 - SECURITY)
+  - `192.168.60.1/24` (VLAN 60 - BACKUP)
+  - `192.168.70.1/24` (VLAN 70 - VPN)
+  - `192.168.80.1/24` (VLAN 80 - GUEST)
 - [x] Configure routing & NAT
-- [x] Configure firewall aliases
+- [x] Configure firewall aliases (`RFC1918_Subnets`, `DC01_IP`, `AD_Admin_Ports`)
 - [x] Configure firewall rules:
+  - Allow VLAN 10 -> Full Administrative Access
   - Allow VLAN 30 -> VLAN 20 (WinRM `5985/5986`, RDP `3389`, AD/DNS ports)
-  - Allow outbound Internet traffic
+  - Allow outbound Internet traffic (`!RFC1918_Subnets`)
   - Implement default-deny rules for unauthorized inter-VLAN traffic
-- [x] Configure OPNsense **DHCP Relay** on VLAN 30 pointing to `192.168.20.10` (DC01)
-- [x] Configure OPNsense NTP server for network clock synchronization
-- [x] Configure management access
-- [x] Configure VPN
-- [x] Document firewall configuration
+  - Isolate DMZ (VLAN 40) and GUEST (VLAN 80) from internal networks
+- [x] Configure OPNsense **DHCP Relay** on VLANs 30, 50, and 80 pointing to `192.168.20.10` (DC01)
+- [x] Configure OPNsense NTP server across all active VLAN interfaces
+- [x] Configure management access (VLAN 10 restricted)
+- [ ] Configure VPN (WireGuard / OpenVPN)
+- [x] Export XML firewall configuration backup
 
 #### VLANs
 - [x] VLAN 10 - Management
@@ -82,7 +90,7 @@ The logical enterprise architecture describes the target environment. The curren
 - [x] Test blocked inter-VLAN traffic
 - [x] Test management access
 - [ ] Test VPN
-- [ ] Test DMZ isolation
+- [x] Test DMZ isolation
 - [ ] Test guest isolation
 
 ---
