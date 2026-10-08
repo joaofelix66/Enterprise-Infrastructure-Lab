@@ -43,7 +43,7 @@ The logical enterprise architecture describes the target environment. The curren
 
 ---
 
-### Phase 3 — Network Infrastructure & Routing
+### Phase 3 - Network Infrastructure & Routing
 
 #### FW01 (OPNsense)
 - [x] Install/configure OPNsense (Permanent Disk Mode)
@@ -110,8 +110,8 @@ The logical enterprise architecture describes the target environment. The curren
 - [x] Create domain users
 - [x] Create security groups
 - [x] Create administrative accounts
-- [ ] Install AD CS (Root CA) for local TLS trust auto-enrollment
-- [ ] Configure domain security policies
+- [x] Install AD CS (Root CA) for local TLS trust auto-enrollment
+- [x] Configure domain security policies
 - [ ] Document Active Directory structure
 
 #### Active Directory Testing
@@ -120,10 +120,10 @@ The logical enterprise architecture describes the target environment. The curren
 - [x] Test domain authentication & Kerberos ticket issuance
 - [x] Test DNS resolution
 - [x] Test DHCP leases via OPNsense DHCP Relay
-- [ ] Test user/group permissions
-- [ ] Test account lockout
-- [ ] Test password policies
-- [ ] Test administrative access
+- [x] Test user/group permissions
+- [x] Test account lockout
+- [x] Test password policies
+- [x] Test administrative access
 - [ ] Document common AD troubleshooting procedures
 
 ---
