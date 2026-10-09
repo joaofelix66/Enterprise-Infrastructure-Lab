@@ -28,4 +28,4 @@ Get-ItemProperty "HKLM:\SYSTEM\CurrentControlSet\Control\Class\{4d36e972-e325-11
 Restart-NetAdapter -Name *
 ```
 
-Gateway connectivity returned after the change. The exact underlying cause was not found.. so i'm not sure what caused the issue, if it was a **Firewall Rule** mistake on my part or not.
+Gateway connectivity returned after the change. The exact underlying cause was not found.. so i'm not sure what caused the issue, if it was a **Firewall Rule** mistake on my part or not, i think it was due to a complication with the firewall rules.
