@@ -219,6 +219,8 @@ docs/
 │   ├── linux.md
 │   ├── docker.md
 │   └── nginx.md
+├── checklist/
+│   ├── checklist.md
 ├── security/
 │   ├── security.md
 │   ├── hardening.md

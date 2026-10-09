@@ -122,7 +122,7 @@ The server network is not treated as a flat trusted network.
 
 ### Clients - VLAN 30
 
-Contains domain-joined endpoints such as WIN11-01 and WIN11-02.
+Contains domain-joined endpoints such as WIN11-01 and in the future WIN11-02.
 
 Clients require selected services including:
 
@@ -348,9 +348,7 @@ DNS:     DC01
 Domain:  acme.local
 ```
 
-Other VLANs may have their own scopes.
-
-DHCP relay can be used when the DHCP server is located on another subnet.
+DHCP relay is used when the DHCP server is located on another subnet (which is what happens in this case).
 
 ---
 

@@ -250,28 +250,28 @@ acme.local
 OU structure:
 
 ```text
-ACME
-├── Users
-│   ├── IT
-│   ├── HR
-│   ├── Finance
-│   ├── Sales
-│   └── Management
+acme.local
+├── OU=Users
+│   ├── OU=IT
+│   ├── OU=HR
+│   ├── OU=Finance
+│   └── OU=Management
 │
-├── Computers
-│   ├── Workstations
-│   ├── Laptops
-│   └── Servers
+├── OU=Groups
+│   ├── GG=IT-Admins
+│   ├── GG=HR
+│   ├── GG=Finance
+│   └── GG=Management
 │
-├── Servers
-│   ├── Infrastructure
-│   ├── Application
-│   ├── Database
-│   └── Management
+├── OU=Computers
+│   ├── OU=Workstations
+│   └── OU=Laptops
 │
-├── Service Accounts
-├── Groups
-└── Admin Accounts
+├── OU=Servers
+│   ├── OU=Infrastructure
+│   └── OU=Applications
+│
+├── OU=Admins
 ```
 
 The project covers:
