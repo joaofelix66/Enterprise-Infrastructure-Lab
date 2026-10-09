@@ -105,14 +105,14 @@ The logical enterprise architecture describes the target environment. The curren
 - [ ] Configure Windows NTP client to sync time from OPNsense (`192.168.20.1`)
 - [x] Install and authorize DHCP Server role
 - [x] Configure DHCP Scopes:
-  - Scope 1: `192.168.30.0/24` (Clients — Gateway: `192.168.30.1`, DNS: `192.168.20.10`)
+  - Scope 1: `192.168.30.0/24` (Clients - Gateway: `192.168.30.1`, DNS: `192.168.20.10`)
 - [x] Create Organizational Units (OUs)
 - [x] Create domain users
 - [x] Create security groups
 - [x] Create administrative accounts
 - [x] Install AD CS (Root CA) for local TLS trust auto-enrollment
 - [x] Configure domain security policies
-- [ ] Document Active Directory structure
+- [x] Document Active Directory structure
 
 #### Active Directory Testing
 - [x] Point `WIN11-01` DNS to `192.168.20.10` and join `acme.local`
@@ -130,22 +130,24 @@ The logical enterprise architecture describes the target environment. The curren
 
 ### Phase 5 - Group Policy
 - [ ] Create baseline GPO
-- [ ] Configure password policy
-- [ ] Configure account lockout policy
-- [ ] Configure Windows Firewall rules via GPO
-- [ ] Configure Windows Defender
-- [ ] Configure security auditing
-- [ ] Configure workstation policies
-- [ ] Configure administrative policies
+- [x] Configure password policy
+- [x] Configure account lockout policy
+- [x] Configure Windows Firewall rules via GPO
+- [x] Configure Windows Defender
+- [x] Configure security auditing
+- [x] Configure workstation policies
+- [x] Configure administrative policies
 - [ ] Configure Windows update policies
 - [ ] Test GPO inheritance
 - [ ] Test GPO security filtering
 - [ ] Test GPO processing (`gpupdate /force`, `gpresult /h`)
 - [ ] Create GPO troubleshooting procedure
 
+*The security settings currently configured are being selected with the CIS Benchmark as a reference and adjusted for this lab. The full exported GPO output, policy links/scopes, and effective settings still need to be documented and validated.*
+
 ---
 
-### Phase 6 - File Services (FILE01 / DC01 Consolidated)
+### Phase 6 - File Services (FILE01)
 - [ ] Configure storage
 - [ ] Configure SMB
 - [ ] Create departmental shares
@@ -331,7 +333,7 @@ The logical enterprise architecture describes the target environment. The curren
 - [ ] Incorrect firewall rule
 - [ ] Routing failure
 - [ ] NAT failure
-- [ ] VLAN connectivity failure
+- [x] VLAN connectivity failure (Windows NIC VLAN ID workaround)
 - [ ] VPN failure
 
 ---
