@@ -196,7 +196,7 @@ The logical enterprise architecture describes the target environment. The curren
 #### Docker
 - [ ] Install Docker
 - [ ] Configure Docker networking
-- [ ] Configure Docker container memory limits (e.g., `mem_limit: 512m`)
+- [ ] Configure Docker container memory limits (`mem_limit: 512m`)
 - [ ] Create Docker Compose configuration
 - [ ] Deploy test containers
 - [ ] Configure persistent storage
@@ -282,8 +282,8 @@ The logical enterprise architecture describes the target environment. The curren
 ### Phase 13 - Automation
 
 #### PowerShell
-- [ ] Create AD administration scripts
-- [ ] Create user-management scripts
+- [x] Create AD administration scripts
+- [x] Create user-management scripts
 - [ ] Create file-service scripts
 - [ ] Create service-health scripts
 - [ ] Create reporting scripts
@@ -311,9 +311,9 @@ The logical enterprise architecture describes the target environment. The curren
 ### Phase 14 - Troubleshooting Scenarios
 
 #### Windows
-- [ ] DNS failure
-- [ ] DHCP failure / DHCP Relay issue
-- [ ] AD authentication failure
+- [x] DNS failure
+- [x] DHCP failure / DHCP Relay issue
+- [x] AD authentication failure
 - [ ] GPO processing failure
 - [ ] Account lockout
 - [ ] File permission problem
